@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "enarx-exec-wasmldr",
+    "enarx-run",
+    "enarx-shim-kvm",
+    "enarx-shim-sgx",
+    "enarx-test-wasm",
+]

@@ -1,0 +1,11 @@
+[package]
+name = "enarx-run"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shim_sgx_amd64 = { path = "../enarx-shim-sgx", package = "enarx-shim-sgx", artifact = "bin", target = "x86_64-unknown-none" }
+shim_kvm_amd64 = { path = "../enarx-shim-kvm", package = "enarx-shim-kvm", artifact = "bin", target = "x86_64-unknown-none" }
+shim_kvm_arm64 = { path = "../enarx-shim-kvm", package = "enarx-shim-kvm", artifact = "bin", target = "aarch64-unknown-none" }
+exec_wasmldr_amd64 = { path = "../enarx-exec-wasmldr", package = "enarx-exec-wasmldr", artifact = "bin", target = "x86_64-unknown-linux-musl" }
+exec_wasmldr_arm64 = { path = "../enarx-exec-wasmldr", package = "enarx-exec-wasmldr", artifact = "bin", target = "aarch64-unknown-linux-musl" }
