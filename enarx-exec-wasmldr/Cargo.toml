@@ -1,0 +1,7 @@
+[package]
+name = "enarx-exec-wasmldr"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+enarx-test-wasm = { path = "../enarx-test-wasm", artifact = "bin", target = "wasm32-wasi" }
